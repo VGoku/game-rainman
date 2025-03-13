@@ -22,6 +22,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 /* Start button styling */
@@ -57,11 +59,17 @@ button:focus {
     margin: 10px;
 }
 
+#scoreboard {
+    font-size: 24px;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
 /* Canvas styling with fog effect */
 canvas {
     border: 4px solid #333;
     background-color: #000;
-    margin-top: 20px;
+    margin-top: 0;  /* Remove top margin since we're using gap */
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
     position: relative;
 }

@@ -36,12 +36,6 @@ function startGame() {
     lastObstacleTime = Date.now();
     lastPowerUpTime = Date.now();
     document.getElementById("start-button").style.display = "none";
-    
-    // Add fog effect
-    let fog = document.createElement("div");
-    fog.classList.add("fog");
-    document.body.appendChild(fog);
-    
     requestAnimationFrame(gameLoop);
 }
 
